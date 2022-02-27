@@ -16,7 +16,11 @@ img {
     height: 100vh;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
 form {
     display: flex;
-    flex: 1;
 }
