@@ -14,11 +14,11 @@
         <div class="image-header"></div>
     </div>
     <div class="content-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem eligendi nemo, accusantium ea est placeat rem qui voluptate mollitia. Earum amet incidunt explicabo, odit non impedit obcaecati asperiores ullam.</p>
-        <p>Just dooooooooo it!</p>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem eligendi nemo, accusantium ea est placeat rem qui voluptate mollitia. Earum amet incidunt explicabo, odit non impedit obcaecati asperiores ullam.</p>
+        <p class="p2">Just dooooooooo it!</p>
 
         <form action="example.com/path" method="post">
-        <h2>Please fill out all fields</h2>
+        <p class="p3">Please fill out all fields</p>
             <div class="wrapper">
                 <div>
                     <label for="first_name">FIRST NAME</label>
@@ -42,19 +42,21 @@
             <div class="wrapper">
                 <div>
                     <label for="user_password">PASSWORD</label>
-                    <input type="password" name="user_password" id="user_password">
+                    <input type="password" name="user_password" id="user_password" required>
                 </div>
                 <div>
                     <label for="conform_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="conform_password" id="conform_password">
+                    <input type="password" name="confirm_password" id="confirm_password" required>
                 </div>
             </div>
         </form>
 
-        <button>
-            Create Account
-        </button>
         <div>
+            <button>
+                Create Account
+            </button>
+        </div>
+        <div class="reminder">
             Already have an account? <span>Log in</span>
         </div>
     </div>
