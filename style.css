@@ -85,10 +85,16 @@ input:invalid {
     border: 1px solid red;
 }
 
+.wrapper>div {
+    position: relative;
+}
+
 .pass-reminder {
     margin-top: 5px;
     color: red;
     font-size: .8rem;
+    position: absolute;
+    top: 40px;
 }
 
 button {
