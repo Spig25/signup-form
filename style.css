@@ -9,6 +9,11 @@
     --main-font-size: 1.5rem;
 }
 
+@font-face {
+    font-family: odin-font;
+    src: url(../../Downloads/Norse-Bold.otf);
+}
+
 body {
     display: flex;
 }
@@ -16,9 +21,32 @@ body {
 .image-container {
     display: flex;
     flex: 1;
+    position: relative;
 }
 
-img {
+.image-body {
+    position: absolute;
+    background: black;
+    color: white;
+    opacity: .75;
+    width: 100%;
+    top: 40vh;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-text {
+    font-size: 5rem;
+    font-family: odin-font;
+}
+
+.logo {
+    height: 13vh;
+}
+
+.sidebar-image {
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -47,11 +75,8 @@ img {
 
 form {
     padding: 40px;
-    /* margin: 40px 0; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* border-bottom: 2px solid red; */
     box-shadow: 0px 9px 40px 9px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +123,6 @@ input:invalid {
 }
 
 button {
-    /* width: 200px; */
     padding: 12px 50px;
     margin: 40px 40px 20px 40px;
     font-size: 1.1rem;
