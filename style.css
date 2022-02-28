@@ -31,19 +31,19 @@ body {
     opacity: .75;
     width: 100%;
     top: 40vh;
-    height: 15vh;
+    height: max(20vh, 120px);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .image-text {
-    font-size: 5rem;
+    font-size: max(18vh, 100px);
     font-family: odin-font;
 }
 
 .logo {
-    height: 13vh;
+    height: max(18vh, 100px);
 }
 
 .sidebar-image {
